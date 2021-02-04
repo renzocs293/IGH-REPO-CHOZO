@@ -15,4 +15,5 @@ Semana 02
 - Aprender a analizar bien un ejercicio antes de dar una respuesta final.
 
 Semana 03
--
+-Aprender a usar los objetos DTO.
+-Aprender a codificar de forma más ordenada.
