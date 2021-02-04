@@ -16,4 +16,4 @@ Semana 02
 
 Semana 03
 -Aprender a usar los objetos DTO.
--Aprender a codificar de forma más ordenada.
+-Aprender a codificar de forma más ordenada. 
