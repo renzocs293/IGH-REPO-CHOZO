@@ -1,0 +1,3 @@
+2021-02-04 22:29:24,626(yyyy-MM-dd HH:mm:ss)INFO  Log4jTest:21 - Exitoso
+2021-02-04 22:29:24,629(yyyy-MM-dd HH:mm:ss)WARN  Log4jTest:24 - Warning
+2021-02-04 22:29:24,629(yyyy-MM-dd HH:mm:ss)FATAL Log4jTest:27 - Error
