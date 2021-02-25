@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset=UTF-8>
+<meta name="viewPort" content="width=device-width, initial-scale=1.0">
+<link href="/css/style.css" rel="stylesheet">
+<title>Lista</title>
+
+</head>
+<body>
+	<div>
+		<form method="get">
+			<h1 th:text="${titulo}" style="color: #009879;margin-bottom: 15px;"></h1>
+			<a class="a-new" th:href="@{/agregar}" th:text="'Nuevo Bus'" title="Crear nuevo bus"> </a>
+			<table class="content-table">
+				<thead>
+					<tr>
+						<th>FABRICANTE</th>
+						<th>PLACA</th>
+						<th>CAPACIDAD ESTANDAR</th>
+						<th>CAPACIDAD PREMIUM</th>
+						<th style="text-align: center;">ACCION</th>
+					</tr>
+
+				</thead>
+
+				<tbody>
+					<tr th:each="bus:${buses}">
+						<td th:text="${bus.id_bus}" hidden=""></td>
+						<td th:text="${bus.fabricante.nombre}"></td>
+						<td th:text="${bus.placa}"></td>
+						<td th:text="${bus.cap_estandar}"></td>
+						<td th:text="${bus.cap_premiun}"></td>
+						<td><a class="a-edit" th:href="@{/editar/} + ${bus.id_bus}" 
+								th:text="'Editar'" title="Editar bus"> </a>
+							<a class="a-delete" th:href="@{/eliminar/} + ${bus.id_bus}" 
+								th:text="'Eliminar'" title="Eliminar bus"> </a>
+						</td>
+					</tr>
+				</tbody>
+
+			</table>
+		</form>
+
+	</div>
+</body>
+</html>
